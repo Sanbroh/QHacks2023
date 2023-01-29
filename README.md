@@ -2,7 +2,7 @@
 Kevin Liang, Michael Han, Brett McGonagal, Thomas Tesselaar
 
 ## Running the code
-To run the code, first make sure all dependencies are installed. You will need installed:
+To run the code, first get the code from GitHub and then make sure all dependencies are installed. You will need installed:
 1. a newer version of python
 2. the openai api, and 
 3. flask<br>
