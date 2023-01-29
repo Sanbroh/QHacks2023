@@ -1,0 +1,234 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="product">
+  <a class="return" href="../">
+    &#8592
+  </a>
+
+  <div class="scripts" id="scripts">
+    <h1>Generated Script</h1>
+    <h3 id="scripts-index">Slide 1</h3>
+    <p id="scripts-content" contentEditable="true">{{ script[2] }}</p>
+    <div id="scripts-content-hidden">
+      {% for message in script %}
+        <p>{{ message }}</p>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="scripts-toggle fas fa-comment" id="scripts-toggle" onclick="toggleScript()"></div>
+
+  <div class="container">
+    <div id="presentation-area">
+      <section class="presentation" id="presentation-tag">
+
+        <div class="slide show downloadable" id="st-title">
+          <img class="cover" src="{{ url_for('static',filename='images/st-title-gf.png') }}" />
+          <h3 class="title" contentEditable="true">
+            {{ script[0] }}<i class="title-em">{{ script[1] }}</i>
+          </h3>
+          <p class="sub-title" contentEditable="true">
+            {{ script[2] }}
+          </p>
+          <img class="logo" src={{ img_url }} />
+        </div>
+
+        <div class="slide" id="st-problem">
+          <img class="cover" src="{{ url_for('static',filename='images/st-problem-gf.png') }}" />
+          <div class="heading" contentEditable="true">
+            The Problem
+          </div>
+          <div class="sub-heading" contentEditable="true">
+            Defining the issue
+          </div>
+          <div class="pointers">
+            <div class="pointer" id="pointer-1">
+              <img src="{{ url_for('static',filename='images/st-problem-arrow.png') }}" />
+              <p contentEditable="true">{{ slides[0][0] }}</p>
+            </div>
+            <div class="pointer" id="pointer-2">
+              <img src="{{ url_for('static',filename='images/st-problem-arrow.png') }}" />
+              <p contentEditable="true">{{ slides[0][1] }}</p>
+            </div>
+            <div class="pointer" id="pointer-3">
+              <img src="{{ url_for('static',filename='images/st-problem-arrow.png') }}" />
+              <p contentEditable="true">{{ slides[0][2] }}</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide" id="st-solution">
+          <img class="cover" src="{{ url_for('static',filename='images/st-solution-phone.png') }}" />
+          <div class="heading" contentEditable="true">
+            The Solution
+          </div>
+          <div class="sub-heading" contentEditable="true">
+            How to solve it
+          </div>
+          <div class="pointers">
+            <div class="pointer" id="pointer-1">
+              <img src="{{ url_for('static',filename='images/st-solution-1.png') }}" />
+              <p contentEditable="true">{{ slides[1][0] }}</p>
+            </div>
+            <div class="pointer" id="pointer-2">
+              <img src="{{ url_for('static',filename='images/st-solution-2.png') }}" />
+              <p contentEditable="true">{{ slides[1][1] }}</p>
+            </div>
+            <div class="pointer" id="pointer-3">
+              <img src="{{ url_for('static',filename='images/st-solution-3.png') }}" />
+              <p contentEditable="true">{{ slides[1][2] }}</p>
+            </div>
+          </div>
+          <img class="logo" src={{ img_url }} />
+        </div>
+
+        <div class="slide" id="st-hiw">
+          <div class="heading" contentEditable="true">
+            How It Works
+          </div>
+          <div class="sub-heading" contentEditable="true">
+            The implementation
+          </div>
+          <div class="pointers">
+            <div class="pointer" id="pointer-1">
+              <p contentEditable="true">{{ slides[2][0] }}</p>
+            </div>
+            <h2 class="d-arrow">&#8595;</h2>
+            <div class="pointer" id="pointer-2">
+              <p contentEditable="true">{{ slides[2][1] }}</p>
+            </div>
+            <h2 class="d-arrow">&#8595;</h2>
+            <div class="pointer" id="pointer-3">
+              <p contentEditable="true">{{ slides[2][2] }}</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide" id="st-tm">
+          <img class="cover" src="{{ url_for('static',filename='images/st-tm-diagram.png') }}" />
+          <div class="heading" contentEditable="true">
+            Target Market
+          </div>
+          <div class="sub-heading" contentEditable="true">
+            Sizing the market
+          </div>
+          <div class="pointer" id="TAM" contentEditable="true">$X.X B</div>
+          <div class="pointer" id="SAM" contentEditable="true">$XXX M</div>
+          <div class="pointer" id="SOM" contentEditable="true">$XX M</div>
+          <div class="pointer" id="TAM-desc" contentEditable="true">{{ slides[3][0] }}</div>
+          <div class="pointer" id="SAM-desc" contentEditable="true">{{ slides[3][1] }}</div>
+          <div class="pointer" id="SOM-desc" contentEditable="true">{{ slides[3][2] }}</div>
+        </div>
+
+        <div class="slide" id="st-gtm">
+          <img class="cover" src="{{ url_for('static',filename='images/st-gtm-gf.png') }}" />
+          <div class="heading" contentEditable="true">
+            Go-To-Market Strategy
+          </div>
+          <div class="sub-heading" contentEditable="true">
+            Reaching the target audience
+          </div>
+          <div class="pointers">
+            <div class="pointer" id="stage-1">
+              <img src="{{ url_for('static',filename='images/st-gtm-launch.png') }}" />
+              <h4 contentEditable="true">Stage 1</h4>
+              <h2 contentEditable="true">Launch</h2>
+              <p contentEditable="true">{{ slides[4][0] }}</p>
+            </div>
+            <div class="pointer" id="stage-2">
+              <img src="{{ url_for('static',filename='images/st-gtm-introduction.png') }}" />
+              <h4 contentEditable="true">Stage 2</h4>
+              <h2 contentEditable="true">Introduction</h2>
+              <p contentEditable="true">{{ slides[4][1] }}</p>
+            </div>
+            <div class="pointer" id="stage-3">
+              <img src="{{ url_for('static',filename='images/st-gtm-scale.png') }}" />
+              <h4 contentEditable="true">Stage 3</h4>
+              <h2 contentEditable="true">Scale</h2>
+              <p contentEditable="true">{{ slides[4][2] }}</p>
+            </div>
+            <div class="pointer" id="stage-4">
+              <img src="{{ url_for('static',filename='images/st-gtm-expansion.png') }}" />
+              <h4 contentEditable="true">Stage 4</h4>
+              <h2 contentEditable="true">Expansion</h2>
+              <p contentEditable="true">{{ slides[4][3] }}</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide" id="st-ns">
+          <div class="heading" contentEditable="true">
+            Next Steps
+          </div>
+          <div class="sub-heading" contentEditable="true">
+            For tomorrow and beyond
+          </div>
+          <div class="pointers">
+            <div class="pointer" id="step-1">
+              <img src="{{ url_for('static',filename='images/st-solution-1.png') }}" />
+              <p contentEditable="true">{{ slides[5][0] }}</p>
+            </div>
+            <div class="pointer-arrow">
+              <h1>&#8594;</h1>
+            </div>
+            <div class="pointer" id="step-2">
+              <img src="{{ url_for('static',filename='images/st-solution-2.png') }}" />
+              <p contentEditable="true">{{ slides[5][1] }}</p>
+            </div>
+            <div class="pointer-arrow">
+              <h1>&#8594;</h1>
+            </div>
+            <div class="pointer" id="step-3">
+              <img src="{{ url_for('static',filename='images/st-solution-3.png') }}" />
+              <p contentEditable="true">{{ slides[5][2] }}</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide" id="st-ty">
+          <div class="heading" contentEditable="true">
+            Thank you
+          </div>
+          <div class="sub-heading" contentEditable="true">
+            {{ script[9] }}
+          </div>
+          <div class="pointers">
+            <div class="pointer">
+              <img src="{{ url_for('static',filename='images/st-ty-website.png') }}" />
+              <p contentEditable="true">www.mywebsite.com</p>
+            </div>
+            <div class="pointer">
+              <img src="{{ url_for('static',filename='images/st-ty-email.png') }}" />
+              <p contentEditable="true">givememoney@mywebsite.com</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="counter">
+        1 of n
+      </section>
+
+      <section class="navigation">
+        <button id="download" class="btn-screen show" onclick="downloadScreen()">
+          <i class="fas fa-download"></i>
+        </button>
+
+        <button id="full-screen" class="btn-screen show" onclick="fullScreenMode()">
+          <i class="fas fa-expand"></i>
+        </button>
+
+        <button id="left-btn" class="btn show" onclick="moveToLeftSlide()">
+          <i class="fas fa-solid fa-caret-left"></i>
+        </button>
+
+        <button id="right-btn" class="btn show" onclick="moveToRightSlide()">
+          <i class="fa-solid fa-caret-right"></i>
+        </button>
+      </section>
+    </div>
+  </div>
+</div>
+{% endblock %}

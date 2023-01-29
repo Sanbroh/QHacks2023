@@ -1,0 +1,421 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap'); */
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+.slide {
+  background-color: #F5F5F5;
+}
+
+#st-title .title {
+  position: absolute;
+  left: 100px;
+  top: 80px;
+
+  font-weight: 700;
+  font-size: 64px;
+
+  color: #0A1F44;
+
+  min-width: 20px;
+}
+
+#st-title .title .title-em {
+  color: #E99982;
+  font-style: normal;
+}
+
+#st-title .sub-title {
+  position: absolute;
+  left: 100px;
+  top: 175px;
+  font-weight: 700;
+  font-size: 32px;
+  color: #ACACAC;
+  min-width: 20px;
+
+  max-width: 50%;
+}
+
+#st-title .cover, #st-problem .cover, #st-solution .cover, #st-tm .cover, #st-gtm .cover {
+  position: absolute;
+}
+
+#st-title .cover {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#st-title .logo {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  z-index: 100;
+  border-style: solid;
+  border-color: #300a6d;
+  border-width: 8px;
+
+  width: 25%;
+  border-radius: 100%;
+}
+
+#st-problem .heading, #st-solution .heading {
+  position: absolute;
+  left: 90px;
+  top: 75px;
+
+  font-weight: 700;
+  font-size: 56px;
+  min-width: 20px;
+}
+
+#st-problem .sub-heading, #st-solution .sub-heading {
+  position: absolute;
+  left: 95px;
+  top: 145px;
+
+  font-weight: 700;
+  font-size: 24px;
+
+  color: #ACACAC;
+  min-width: 20px;
+}
+
+#st-problem .cover {
+  right: 0;
+  top: 0;
+
+  height: 100%;
+}
+
+#st-problem .pointers {
+  position: absolute;
+  left: 90px;
+  top: 200px;
+}
+
+#st-problem .pointer {
+  margin-top: 12px;
+  display: flex;
+  align-items:center;
+}
+
+#st-problem .pointer img, #st-problem .pointer p {
+  display: inline-block;
+}
+
+#st-problem .pointer img {
+  width: 54px;
+}
+
+#st-problem .pointer p {
+  font-size: 28px;
+  font-weight: 700;
+
+  margin-top: 16px;
+  margin-left: 24px;
+
+  max-width: 80%;
+  min-width: 20px;
+}
+
+#st-solution .cover {
+  right: 50px;
+  bottom: 0;
+  height: 90%;
+}
+
+#st-solution .pointers {
+  position: absolute;
+  left: 90px;
+  top: 200px;
+}
+
+#st-solution .pointer {
+  margin-top: 12px;
+  display: flex;
+  align-items:center;
+}
+
+#st-solution .pointer img, #st-solution .pointer p {
+  display: inline-block;
+}
+
+#st-solution .pointer img {
+  width: 42px;
+}
+
+#st-solution .pointer p {
+  font-size: 28px;
+  font-weight: 700;
+
+  margin-top: 16px;
+  margin-left: 24px;
+
+  max-width: 60%;
+  min-width: 20px;
+}
+
+#st-solution .logo {
+  position: absolute;
+  right: 290px;
+  top: 128px;
+  z-index: 100;
+
+  width: 64px;
+}
+
+#st-hiw .heading, #st-tm .heading, #st-gtm .heading, #st-ns .heading {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 45px;
+
+  font-weight: 700;
+  font-size: 56px;
+  min-width: 20px;
+}
+
+#st-hiw .sub-heading, #st-tm .sub-heading, #st-gtm .sub-heading, #st-ns .sub-heading {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 115px;
+
+  font-weight: 700;
+  font-size: 24px;
+  min-width: 20px;
+
+  color: #ACACAC;
+}
+
+#st-hiw .pointers {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#st-hiw .pointer p {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+
+  border-radius: 36px;
+  border-color: #EE9999;
+  border-width: 5px;
+  border-style: solid;
+
+  padding: 12px 32px;
+  min-width: 20px;
+}
+
+#st-hiw .d-arrow {
+  color: #EE9999;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+#st-tm .cover {
+  width: 42.5%;
+  left: 15%;
+  top: 200px;
+}
+
+#st-tm #TAM, #st-tm #SAM, #st-tm #SOM, #st-tm #TAM-desc, #st-tm #SAM-desc, #st-tm #SOM-desc {
+  position: absolute;
+  font-weight: 700;
+  min-width: 20px;
+}
+
+#st-tm #TAM-desc, #st-tm #SAM-desc, #st-tm #SOM-desc {
+  font-size: 24px;
+  max-width: 30%;
+}
+
+#st-tm #TAM, #st-tm #SAM, #st-tm #SOM {
+  text-align: center;
+}
+
+#st-tm #TAM {
+  font-size: 28px;
+  left: 30%;
+  transform: translateX(-50%);
+  top: 42%;
+}
+
+#st-tm #SAM {
+  font-size: 18px;
+  left: 30%;
+  transform: translateX(-50%);
+  top: 59%;
+}
+
+#st-tm #SOM {
+  font-size: 24px;
+  left: 30%;
+  transform: translateX(-50%);
+  color: white;
+  top: 75%;
+}
+
+#st-tm #TAM-desc {
+  top: 38.5%;
+  left: 60%;
+}
+
+#st-tm #SAM-desc {
+  top: 57%;
+  left: 60%;
+}
+
+#st-tm #SOM-desc {
+  top: 75.5%;
+  left: 60%;
+}
+
+#st-gtm .heading {
+  top: 55px;
+  font-size: 38px;
+  min-width: 20px;
+}
+
+#st-gtm .cover {
+  left: 47.5%;
+  top: 57.5%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+}
+
+#st-gtm .pointers {
+  position: absolute;
+  left: 55%;
+  top: 57.5%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+#st-gtm .pointer {
+  text-align: center;
+  display: inline-block;
+  font-weight: 700;
+  max-width: 20%;
+
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+#st-gtm .pointer img {
+  width: 60px;
+}
+
+#st-gtm .pointer h4 {
+  font-size: 14px;
+  color: #ACACAC;
+  min-width: 20px;
+}
+
+#st-gtm .pointer h2 {
+  font-size: 24px;
+  min-width: 20px;
+}
+
+#st-gtm .pointer p {
+  font-size: 14px;
+  min-width: 20px;
+}
+
+#st-ns .pointers {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 57.5%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+}
+
+#st-ns .pointer {
+  text-align: center;
+  display: inline-block;
+  font-weight: 700;
+  max-width: 25%;
+
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+#st-ns .pointer-arrow {
+  display: inline-block;
+  color: #EE9999;
+}
+
+#st-ns .pointer img {
+  width: 54px;
+}
+
+#st-ns .pointer p {
+  margin-top: 20%;
+  min-width: 20px;
+
+  border-radius: 36px;
+  border-color: #EE9999;
+  border-width: 5px;
+  border-style: solid;
+
+  padding: 8px 16px;
+}
+
+#st-ty .heading {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+
+  border-radius: 36px;
+  border-color: #EE9999;
+  border-width: 5px;
+  border-style: solid;
+
+  font-weight: 700;
+  font-size: 48px;
+  padding: 8px 96px;
+  min-width: 20px;
+}
+
+#st-ty .sub-heading {
+  position: absolute;
+  left: 50%;
+  top: 56%;
+  transform: translate(-50%, -50%);
+  min-width: 20px;
+
+  text-align: center;
+
+  font-weight: 700;
+  max-width: 100%;
+  font-size: 14px;
+}
+
+#st-ty .pointers {
+  position: absolute;
+  left: 10%;
+  top: 78%;
+}
+
+#st-ty .pointer p, #st-ty .pointer img {
+  display: inline-block;
+}
+
+#st-ty .pointer p {
+  font-weight: 700;
+  font-size: 14px;
+  min-width: 20px;
+}
+
+#st-ty .pointer img {
+  width: 28px;
+}

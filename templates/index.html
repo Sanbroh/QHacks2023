@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <img id="main-logo" src="{{ url_for('static',filename='images/logo.png') }}" \>
+  <form method="post" id="prompt-form">
+    <label for="prompt">&#8594</label>
+    <input type="text" name="prompt"
+           placeholder="What's your idea? (ex. bouncy castle for llamas)"
+           value="{{ request.form['prompt'] }}" id="prompt"></input><br><br>
+    <label for="logo">&#8594</label>
+    <input type="text" name="logo"
+           placeholder="Describe your perfect logo! (ex. smiley llama)"
+           value="{{ request.form['logo'] }}" id="logo"></input><br><br>
+   <label for="length">&#8594</label>
+   <input type="text" name="length"
+          placeholder="How long is your pitch (mins)? (ex. 5 minutes)"
+          value="{{ request.form['length'] }}" id="length"></input><br><br>
+    <button type="submit" onclick="load(event)">Generate Pitch</button>
+  </form>
+  <div id="loading">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Rotating_earth_animated_transparent.gif/220px-Rotating_earth_animated_transparent.gif" />
+    <p>Generating...</p>
+  </div>
+{% endblock %}
