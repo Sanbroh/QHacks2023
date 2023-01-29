@@ -9,10 +9,10 @@ To run the code, first make sure all dependencies are installed. You will need i
 
 Next, open the app.py file in a python or text editor and in line 5 where it says "your-api-key-here", replace it with your openai api key. If you don't have one, you can get one for free at https://beta.openai.com/signup/ 
 
-From here, open a terminal, navigate to the QHacks2023 folder, and enter the command "py - m flask run" for windows or "python3 - m flask run" for mac.
+From here, open a terminal, navigate to the QHacks2023 folder, and enter the command "py - m flask run" for windows or "python3 - m flask run" for mac. The terminal will tell you something to the effect of "Running on http://127.0.0.1:5000/"
 
 ## Using the app
-Once you've ran the command above, the app should open in your default web browser. Now, provide it with the three requested pieces of information:
+You can then take this link and paste it into the Google Chrome search bar (Safari sometimes acts funny). Now, provide it with the three requested pieces of information:
 1. Your best app/product idea
 2. Your idea for a matching logo
 3. Your desired pitch length<br>
