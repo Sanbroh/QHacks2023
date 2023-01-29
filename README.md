@@ -14,6 +14,7 @@ Once you've ran the command above, the app should open in your default web brows
 1. Your best app/product idea
 2. Your idea for a matching logo
 3. Your desired pitch length<br>
+
 and hit run. After a few seconds of the ai working its magic, you'll be presented with a full slide deck for your idea, and a complete script to pitch it.
 <br>
 Lastly, try as many prompts as you can
