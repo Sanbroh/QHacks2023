@@ -11,7 +11,7 @@ If you're not sure how to install or if you have everything installed yet don't 
 
 Next, open the app.py file in a python or text editor and in line 5 where it says "your-api-key-here", replace it with your openai api key. If you don't have one, you can get one for free at https://beta.openai.com/signup/ 
 
-From here, open a terminal(mac)/command prompt(windows), navigate to the QHacks2023 folder, and enter the command "py - m flask run" for windows or "python3 - m flask run" for mac. The terminal will tell you something to the effect of "Running on http://127.0.0.1:5000/"
+From here, open a terminal(mac)/command prompt(windows), navigate to the QHacks2023 folder, and enter the command "py -m flask run" or "python -m flask run" for windows or "python3 -m flask run" for mac. The terminal will tell you something to the effect of "Running on http://127.0.0.1:5000/"
 
 ## Using the app
 You can then take this link and paste it into the Google Chrome search bar (Safari sometimes acts funny). Now, provide it with the three requested pieces of information:
