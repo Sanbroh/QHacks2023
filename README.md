@@ -7,7 +7,7 @@ To run the code, first get the code from GitHub and then make sure all dependenc
 2. the openai api, and 
 3. flask<br>
 
-If you're not sure how to install or if you have everything installed yet don't worry, when you try and run the code it will let you know what you're missing.
+If you're not sure how to install or if you have everything installed yet don't worry, when you try and run the code it will let you know what you're missing and how to get it.
 
 Next, open the app.py file in a python or text editor and in line 5 where it says "your-api-key-here", replace it with your openai api key. If you don't have one, you can get one for free at https://beta.openai.com/signup/ 
 
