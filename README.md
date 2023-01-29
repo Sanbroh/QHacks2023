@@ -17,4 +17,4 @@ Once you've ran the command above, the app should open in your default web brows
 
 and hit run. After a few seconds of the ai working its magic, you'll be presented with a full slide deck for your idea, and a complete script to pitch it.
 <br>
-Lastly, try as many prompts as you can
+Lastly, try again with as many prompts as you can
